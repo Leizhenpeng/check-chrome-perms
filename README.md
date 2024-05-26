@@ -1,4 +1,3 @@
-
 # Check Chrome Perms
 
 A tool to detect violations by requesting but not using the following Chrome extension permission(s).
@@ -42,7 +41,7 @@ check-perms <your-build-directory>
 ```plaintext
 插件申请的权限:
 [ 'storage', 'tabs', 'bookmarks' ]
-\x1b[32m所有权限均被正确使用和声明。
+所有权限均被正确使用和声明。
 ```
 
 #### Case 2: Some permissions are requested but not used
@@ -50,8 +49,8 @@ check-perms <your-build-directory>
 ```plaintext
 插件申请的权限:
 [ 'storage', 'tabs', 'bookmarks' ]
-\x1b[31m以下权限未使用:
-\x1b[31mtabs
+以下权限未使用:
+- tabs
 ```
 
 #### Case 3: Some permissions are used but not declared
@@ -59,9 +58,9 @@ check-perms <your-build-directory>
 ```plaintext
 插件申请的权限:
 [ 'storage' ]
-\x1b[31m以下权限已在代码中使用但未声明:
-\x1b[31mtabs
-\x1b[31mbookmarks
+以下权限已在代码中使用但未声明:
+- tabs
+- bookmarks
 ```
 
 By following the steps above, you can easily check for any unused or undeclared permissions in your Chrome extension and ensure compliance with best practices.
