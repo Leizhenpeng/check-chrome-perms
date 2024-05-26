@@ -1,0 +1,17 @@
+{
+    "name": "check-chrome-perms",
+    "version": "1.0.0",
+    "description": "A tool to detect violations by requesting but not using the following Chrome extension permission(s):",
+    "main": "lib/checkPermissions.js",
+    "bin": {
+        "check-perms": "./bin/check-permissions.js"
+    },
+    "scripts": {
+        "test": "node bin/check-permissions.js ./build/chrome-mv3-prod"
+    },
+    "author": "leizhenpeng",
+    "license": "MIT",
+    "dependencies": {
+        "yargs": "^17.4.0"
+    }
+}
