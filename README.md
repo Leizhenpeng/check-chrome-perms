@@ -39,26 +39,26 @@ check-perms <your-build-directory>
 #### Case 1: All permissions are correctly used
 
 ```plaintext
-插件申请的权限:
+Permissions requested by the extension:
 [ 'storage', 'tabs', 'bookmarks' ]
-所有权限均被正确使用和声明。
+All permissions are used and declared correctly.
 ```
 
 #### Case 2: Some permissions are requested but not used
 
 ```plaintext
-插件申请的权限:
+Permissions requested by the extension:
 [ 'storage', 'tabs', 'bookmarks' ]
-以下权限未使用:
+Permissions are not used but declared:
 - tabs
 ```
 
 #### Case 3: Some permissions are used but not declared
 
 ```plaintext
-插件申请的权限:
+Permissions requested by the extension::
 [ 'storage' ]
-以下权限已在代码中使用但未声明:
+Permissions are used in the code but not declared:
 - tabs
 - bookmarks
 ```

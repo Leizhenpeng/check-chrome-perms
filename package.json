@@ -3,6 +3,10 @@
     "version": "1.0.2",
     "description": "A tool to detect violations by requesting but not using the following Chrome extension permission(s):",
     "main": "lib/checkPermissions.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leizhenpeng/check-chrome-perms.git"
+    },
     "bin": {
         "check-perms": "./bin/check-permissions.js"
     },
