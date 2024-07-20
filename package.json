@@ -1,6 +1,6 @@
 {
     "name": "check-chrome-perms",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "description": "A tool to detect violations by requesting but not using the following Chrome extension permission(s):",
     "main": "lib/checkPermissions.js",
     "repository": {

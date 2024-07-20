@@ -7,7 +7,7 @@ const checkPermissions = require('../lib/checkPermissions');
 const dirPath = process.argv[2];
 
 if (!dirPath) {
-    console.error('请提供一个文件夹路径作为参数');
+    console.error('Please provide a folder path as an argument');
     process.exit(1);
 }
 
